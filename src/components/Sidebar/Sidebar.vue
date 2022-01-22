@@ -6,18 +6,18 @@
         @mouseleave="sidebarMouseLeave"
     >
       <header class="logo">
-        <router-link to="/app/dashboard"><span class="primary-word">Sing</span> <span class="secondary-word"> App</span></router-link>
+        <router-link to="/app/dashboard"><span class="primary-word">个人综合管理</span> <span class="secondary-word">平台</span></router-link>
       </header>
 
-      <a class="generator-link navTitle" target="_blank" href="https://flatlogic.com/generator">Generate App</a>
+      <!-- <a class="generator-link navTitle" target="_blank" href="https://flatlogic.com/generator">Generate App</a> -->
 
-      <h5 class="navTitle first">
+      <!-- <h5 class="navTitle first">
         APP
-      </h5>
+      </h5> -->
       <ul class="nav">
         <NavLink
             :activeItem="activeItem"
-            header="Dashboard"
+            header="首页"
             link="/app/dashboard"
             iconName="flaticon-home"
             index="dashboard"
@@ -25,7 +25,7 @@
         />
         <NavLink
             :activeItem="activeItem"
-            header="Typography"
+            header="文本编辑"
             link="/app/typography"
             iconName="flaticon-list"
             index="typography"
@@ -33,7 +33,7 @@
         />
         <NavLink
             :activeItem="activeItem"
-            header="Tables Basic"
+            header="基本表单"
             link="/app/tables"
             iconName="flaticon-equal-1"
             index="tables"
@@ -41,7 +41,7 @@
         />
         <NavLink
             :activeItem="activeItem"
-            header="Notifications"
+            header="消息提醒"
             link="/app/notifications"
             iconName="flaticon-bell"
             index="notifications"
@@ -49,18 +49,18 @@
         />
         <NavLink
             :activeItem="activeItem"
-            header="Components"
+            header="常用组件"
             link="/app/components"
             iconName="flaticon-network"
             index="components"
             :childrenLinks="[
-              { header: 'Charts', link: '/app/components/charts' },
-              { header: 'Icons', link: '/app/components/icons' },
-              { header: 'Maps', link: '/app/components/maps' },
+              { header: '图标', link: '/app/components/charts' },
+              { header: '样式', link: '/app/components/icons' },
+              { header: '地图', link: '/app/components/maps' },
             ]"
         />
       </ul>
-      <h5 class="navTitle">
+      <!-- <h5 class="navTitle">
         LABELS
       </h5>
       <ul class="sidebarLabels">
@@ -82,8 +82,8 @@
             <span class="labelName">Forms</span>
           </a>
         </li>
-      </ul>
-      <h5 class="navTitle">
+      </ul> -->
+      <!-- <h5 class="navTitle">
         PROJECTS
       </h5>
       <div class="sidebarAlerts">
@@ -98,7 +98,7 @@
                       :variant="alert.color" :value="alert.value" :max="100"/>
           <small>{{alert.footer}}</small>
         </b-alert>
-      </div>
+      </div> -->
     </nav>
   </div>
 </template>

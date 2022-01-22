@@ -1,6 +1,7 @@
 @import '../../styles/app';
 .sidebar {
   position: absolute;
+  height: inherit;
   top: 0;
   left: 0;
   width: $sidebar-width-open;

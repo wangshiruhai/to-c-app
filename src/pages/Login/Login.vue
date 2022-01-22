@@ -3,25 +3,25 @@
     <b-container>
       <h5 class="auth-logo">
         <i class="fa fa-circle text-primary"></i>
-        Sing App
+        个人综合管理平台
         <i class="fa fa-circle text-danger"></i>
       </h5>
-      <Widget class="widget-auth mx-auto" title="<h3 class='mt-0'>Login to your Web App</h3>" customHeader>
-        <p class="widget-auth-info">
+      <Widget class="widget-auth mx-auto" title="<h3 class='mt-0'>登录</h3>" customHeader>
+        <!-- <p class="widget-auth-info">
             Use your email to sign in.
-        </p>
+        </p> -->
         <form class="mt" @submit.prevent="login">
           <b-alert class="alert-sm" variant="danger" :show="!!errorMessage">
             {{errorMessage}}
           </b-alert>
           <div class="form-group">
-            <input class="form-control no-border" ref="email" required type="email" name="email" placeholder="Email" />
+            <input class="form-control no-border" ref="email" required type="email" name="email" placeholder="账号" />
           </div>
           <div class="form-group">
-            <input class="form-control no-border" ref="password" required type="password" name="password" placeholder="Password" />
+            <input class="form-control no-border" ref="password" required type="password" name="password" placeholder="密码" />
           </div>
-          <b-button type="submit" size="sm" class="auth-btn mb-3" variant="inverse">Login</b-button>
-          <p class="widget-auth-info">or sign in with</p>
+          <b-button type="submit" size="sm" class="auth-btn mb-3" variant="inverse">点击登录</b-button>
+          <!-- <p class="widget-auth-info">or sign in with</p>
           <div class="social-buttons">
             <b-button variant="primary" class="social-button mb-2">
               <i class="social-icon social-google"></i>
@@ -31,7 +31,7 @@
               <i class="social-icon social-microsoft"></i>
               <p class="social-text">MICROSOFT</p>
             </b-button>
-          </div>
+          </div> -->
         </form>
         <p class="widget-auth-info">
           Don't have an account? Sign up now!
@@ -40,7 +40,7 @@
       </Widget>
     </b-container>
     <footer class="auth-footer">
-      2019 &copy; Sing App Vue Admin Dashboard Template - Made by <a href="https://flatlogic.com/">Flatlogic</a>
+      2022 &copy; 个人综合管理平台 - shihai.wang
     </footer>
   </div>
 </template>
